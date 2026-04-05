@@ -1,12 +1,14 @@
 package com.noteverse.ai_notes.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import org.antlr.v4.runtime.misc.NotNull;
 
 @Data
-public class NotesRequestDTO {
-    @NotNull
+@AllArgsConstructor
+
+public class NotesResponseDTO {
+
+    private Long id;
     private String videoUrl;
-    @NotNull
     private String content;
 }
